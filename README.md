@@ -1,3 +1,10 @@
+EschBot
+==========
+Twitch Bot serving the channel www.twitch.tv/escheria.
+I will be using the following project as a starting point for my own little bot workings: https://github.com/aidraj/twitch-bot
+
+Original text from the forked project for my own and others reference:
+
 Roboraj
 ==========
 
