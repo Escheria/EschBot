@@ -29,7 +29,7 @@ class Roboraj:
 				sock = self.irc.get_irc_socket_object()
 
 			if config['debug']:
-				print data
+				print(data)
 
 			# check for ping, reply with pong
 			irc.check_for_ping(data)

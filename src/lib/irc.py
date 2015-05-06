@@ -85,6 +85,6 @@ class irc:
 		pp('Joined channels.')
 
 	def leave_channels(self, channels):
-		pp('Leaving chanels %s,' % channels)
+		pp('Leaving channels %s,' % channels)
 		self.sock.send('PART %s\r\n' % channels)
 		pp('Left channels.')

@@ -49,10 +49,10 @@ def pass_to_function(command, args):
 
 	module = importlib.import_module('src.lib.commands.%s' % command)
 	function = getattr(module, command)
-
+	
 	if args:
-		# need to reference to src.lib.commands.<command
+		# need to reference to src.lib.commands.<command>
 		return function(args)
 	else:
-		# need to reference to src.lib.commands.<command
+		# need to reference to src.lib.commands.<command>
 		return function()

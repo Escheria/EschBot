@@ -16,6 +16,11 @@ commands = {
 		'limit': 30,
 		'argc': 3,
 		'return': 'command'
+	},
+	'!damagecalc': {
+		'limit': 5,
+		'argc': 5,
+		'return': 'command'
 	}
 }
 
