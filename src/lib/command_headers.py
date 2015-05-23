@@ -21,6 +21,11 @@ commands = {
 		'limit': 5,
 		'argc': 5,
 		'return': 'command'
+	},
+	'!song': {
+		'limit': 5,
+		'argc': 0,
+		'return': 'command'
 	}
 }
 
