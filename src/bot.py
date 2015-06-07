@@ -7,6 +7,7 @@ Developed by Aidan Thomson <aidraj0@gmail.com>
 import lib.irc as irc_
 from lib.functions_general import *
 import lib.functions_commands as commands
+import lib.tasks_main as tasks
 
 class Roboraj:
 
@@ -20,6 +21,8 @@ class Roboraj:
 		irc = self.irc
 		sock = self.socket
 		config = self.config
+
+		tasks.run_tasks()
 
 		while True:
 			data = sock.recv(config['socket_buffer_size']).rstrip()
@@ -69,7 +72,8 @@ class Roboraj:
 								commands.update_last_used(command, channel)
 
 								if result:
-									resp = '(%s) > %s' % (username, result)
+									# resp = '(%s) > %s' % (username, result)
+									resp = '%s' % (result)
 									pbot(resp, channel)
 									irc.send_message(channel, resp)
 
